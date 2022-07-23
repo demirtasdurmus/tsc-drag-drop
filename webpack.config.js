@@ -7,20 +7,13 @@ module.exports = {
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
-        // publicPath: 'dist'
+        publicPath: '/dist/'
     },
     devServer: {
         static: {
             directory: path.join(__dirname, './'),
         },
         compress: true,
-        // devMiddleware: {
-        //     index: true,
-        //     mimeTypes: { phtml: 'text/html' },
-        //     publicPath: '/dist',
-        //     serverSideRender: true,
-        //     writeToDisk: false,
-        // },
         port: 3000
     },
     devtool: 'inline-source-map',
